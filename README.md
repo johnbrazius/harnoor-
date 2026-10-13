@@ -12,6 +12,7 @@ Plain HTML, CSS and JavaScript: no build step, no frameworks. It deploys directl
 | `pricing.html` | Basic / Standard / Premium packages. "Get Started" opens WhatsApp with the package name |
 | `reviews.html` | Average rating, all reviews, and the **Leave a Review** form (Netlify Forms) |
 | `contact.html` | Contact details and the **Contact** form (Netlify Forms) |
+| `doctors.html` | Website design for doctors & clinics: features, clinic projects and a guide |
 | `thank-you.html`, `404.html` | Form fallback page and "page not found" |
 
 ## Editing content: `js/data.js`
@@ -48,6 +49,23 @@ Until you have real reviews, the review sections show a friendly "Leave a review
 To see how review cards look, open `reviews.html?preview` or `index.html?preview`. That shows clearly
 labelled example reviews which normal visitors never see.
 
+## SEO keywords
+
+| Keyword | Where it's used |
+| --- | --- |
+| website designer in Ludhiana | Home page title, description and guide article |
+| website design company in Ludhiana | Home "What I do" section and guide article |
+| website design for doctors | `doctors.html` (title, heading, guide article); linked from Home and footer |
+| affordable website design in Ludhiana | Packages page title, heading, cost guide and FAQ (with FAQ structured data) |
+| web designer near me | Comes from your **Google Business Profile**, not the website (see below) |
+
+**Google Business Profile** (for "near me" searches): create a free profile at business.google.com,
+pick the category **Website designer**, set the area to Ludhiana, and add your website link, WhatsApp number
+and work photos. Use exactly the same name, phone number and location as on this website. Ask happy clients
+to leave Google reviews.
+
+After the site is live, add it to **Google Search Console** and submit `sitemap.xml`.
+
 ## Deploying on Netlify
 
 1. In Netlify: **Add new site → Import an existing project →** choose this GitHub repo.
@@ -69,7 +87,7 @@ python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
-(Forms only submit once the site is on Netlify.)
+(Forms send through Netlify Forms when hosted on Netlify. On any other host, such as Vercel, they open WhatsApp with the details filled in instead.)
 
 ## Structure
 

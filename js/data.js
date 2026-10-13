@@ -59,50 +59,50 @@ const SITE = {
    --------------------------------------------------------------------- */
 const PROJECTS = [
   {
-    title: "Dr. Pardeep Sharma — Child Specialist Clinic",
+    title: "Child Specialist Clinic",
     category: "Doctor's Clinic",
-    location: "SBS Nagar, Ludhiana",
+    location: "Ludhiana",
     description:
-      "A calm, trustworthy website for a pediatrician (MD Pediatrics, DM Neonatology, AIIMS). Parents can see services, clinic timings and fees, and request an appointment in a few taps.",
-    image: "images/projects/dr-pardeep-sharma.svg",
+      "A calm, trustworthy website for a pediatrician's clinic. Parents can see services, clinic timings and fees, and request an appointment in a few taps.",
+    image: "images/projects/pediatric-clinic.svg",
     url: "", // ← paste the live link here
     tags: ["Appointment Request", "Google Maps", "Click-to-Call", "Parent FAQs", "Mobile Friendly"],
     featured: true,
     note: ""
   },
   {
-    title: "Dr. Damian Hu, MD — Family Practice",
+    title: "Family Medicine Practice",
     category: "Medical Practice",
-    location: "New York, USA",
+    location: "",
     description:
-      "A modern practice website for a family physician in Lower Manhattan, with a 3D layered hero, services, patient information, insurance details and an appointment request form.",
-    image: "images/projects/dr-damian-hu.svg",
+      "A modern website for a family physician, with a 3D layered hero, services, patient information, insurance details and an appointment request form.",
+    image: "images/projects/family-practice.svg",
     url: "",
     tags: ["Appointment Request", "Patient FAQs", "Directions", "Accessibility", "SEO Setup"],
     featured: true,
     note: ""
   },
   {
-    title: "Hometown Bar-B-Que",
+    title: "BBQ Restaurant",
     category: "Restaurant",
-    location: "Brooklyn, New York",
+    location: "",
     description:
-      "A cinematic redesign concept for a well-known BBQ restaurant: a 3D scroll walk from the street into the restaurant, menus, events and catering pages.",
-    image: "images/projects/hometown-bbq.svg",
+      "A cinematic restaurant website concept: a 3D scroll walk from the street into the restaurant, menus, events and catering pages.",
+    image: "images/projects/bbq-restaurant.svg",
     url: "",
     tags: ["3D Scroll Experience", "Menu Pages", "Catering Enquiry", "Events", "15 Pages"],
     featured: true,
     note: "Concept"
   },
   {
-    title: "Website Growth Lab — eBook Store",
+    title: "eBook Store",
     category: "Online Store",
     location: "",
     description:
-      "A complete digital bookstore with search and filters, cart, discount codes, Razorpay payments, secure ebook downloads and an admin dashboard to manage everything.",
-    image: "images/projects/website-growth-lab.svg",
+      "A complete digital bookstore with search and filters, cart, discount codes, online payments, secure ebook downloads and an admin dashboard.",
+    image: "images/projects/ebook-store.svg",
     url: "",
-    tags: ["Online Payments", "Razorpay", "Admin Dashboard", "Secure Downloads", "Discount Codes"],
+    tags: ["Online Payments", "Admin Dashboard", "Secure Downloads", "Discount Codes"],
     featured: false,
     note: ""
   }

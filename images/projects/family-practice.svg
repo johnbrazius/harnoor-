@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Preview of the Damian Hu, MD website">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 750" width="1200" height="750" role="img" aria-label="Preview of the Family Practice website">
   <defs>
     <linearGradient id="hero" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#eaf5fc"/>
@@ -10,10 +10,10 @@
   <rect width="1200" height="44" fill="#f1f4f8"/>
   <circle cx="26" cy="22" r="7" fill="#f87171"/><circle cx="48" cy="22" r="7" fill="#fbbf24"/><circle cx="70" cy="22" r="7" fill="#4ade80"/>
   <rect x="380" y="10" width="440" height="24" rx="12" fill="#ffffff"/>
-  <text x="600" y="27" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#4a5b6e">Damian Hu, MD · Family Practice</text>
+  <text x="600" y="27" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="13" fill="#4a5b6e">Family Medicine Practice</text>
   <!-- nav -->
   <rect y="44" width="1200" height="74" fill="#ffffff"/>
-  <text x="80" y="90" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="700" fill="#17283b">Damian Hu, MD</text>
+  <text x="80" y="90" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="700" fill="#17283b">Family Practice</text>
   <g font-family="Inter, Arial, sans-serif" font-size="15" fill="#4a5b6e">
     <text x="700" y="87">About</text><text x="775" y="87">Services</text><text x="865" y="87">Reviews</text><text x="950" y="87">Contact</text>
   </g>
@@ -21,23 +21,23 @@
   <text x="1085" y="87" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#fff">Request</text>
   
   <g transform="translate(80,150)">
-    <rect width="337" height="34" rx="17" fill="#eaf5fc"/>
+    <rect width="175" height="34" rx="17" fill="#eaf5fc"/>
     <circle cx="20" cy="17" r="5" fill="#2878b5"/>
-    <text x="34" y="22" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#1f6399">Family Medicine · Lower Manhattan</text>
+    <text x="34" y="22" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#1f6399">Family Medicine</text>
   </g>
   <!-- headline -->
   <text font-family="Georgia, 'Times New Roman', serif" font-size="54" fill="#17283b" font-weight="500">
-    <tspan x="80" y="250">Personal family care in</tspan>
-    <tspan x="80" y="316">the heart of <tspan fill="#1f6399" font-style="italic">Manhattan</tspan></tspan>
+    <tspan x="80" y="250">Personal family care</tspan>
+    <tspan x="80" y="316">in the heart of <tspan fill="#1f6399" font-style="italic">the city</tspan></tspan>
   </text>
   <text font-family="Inter, Arial, sans-serif" font-size="19" fill="#4a5b6e">
-    <tspan x="80" y="372">Family practice physician · 8 Chatham Square, New York</tspan>
-    <tspan x="80" y="400">Care for adults and families in Lower Manhattan</tspan>
+    <tspan x="80" y="372">Family practice physician</tspan>
+    <tspan x="80" y="400">Care for adults and families</tspan>
   </text>
   <rect x="80" y="436" width="220" height="54" rx="27" fill="#2878b5"/>
   <text x="190" y="469" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#fff">Request Appointment</text>
   <rect x="316" y="436" width="190" height="54" rx="27" fill="none" stroke="#2878b5" stroke-width="2"/>
-  <text x="411" y="469" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="600" fill="#17283b">(212) 227-9601</text>
+  <text x="411" y="469" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="600" fill="#17283b">Call Us</text>
   <!-- hero visual -->
   <g transform="translate(760,150)">
     <rect width="360" height="350" rx="28" fill="url(#hero)"/>
@@ -72,6 +72,6 @@
     <rect x="24" y="24" width="44" height="44" rx="12" fill="#eaf5fc"/>
     <circle cx="46" cy="46" r="9" fill="#2878b5"/>
     <text x="24" y="100" font-family="Inter, Arial, sans-serif" font-size="20" font-weight="700" fill="#17283b">Insurance</text>
-    <text x="24" y="128" font-family="Inter, Arial, sans-serif" font-size="15" fill="#4a5b6e">Plans we accept</text>
+    <text x="24" y="128" font-family="Inter, Arial, sans-serif" font-size="15" fill="#4a5b6e">Plans accepted</text>
   </g>
 </svg>

@@ -119,9 +119,16 @@
 
   function renderProjects() {
     $$("[data-projects]").forEach((el) => {
-      const featuredOnly = el.getAttribute("data-projects") === "featured";
-      let list = featuredOnly ? PROJECTS.filter((p) => p.featured).slice(0, 3) : PROJECTS;
-      if (featuredOnly && !list.length) list = PROJECTS.slice(0, 3);
+      const mode = el.getAttribute("data-projects");
+      const featuredOnly = mode === "featured";
+      let list = PROJECTS;
+      if (featuredOnly) {
+        list = PROJECTS.filter((p) => p.featured).slice(0, 3);
+        if (!list.length) list = PROJECTS.slice(0, 3);
+      } else if (mode === "doctors") {
+        // Doctors page: projects whose category mentions a clinic or medical practice
+        list = PROJECTS.filter((p) => /clinic|medical|doctor|dental|hospital/i.test(p.category));
+      }
       el.innerHTML = list.map(projectCard).join("") + (featuredOnly ? "" : nextProjectCard());
     });
   }
@@ -301,8 +308,18 @@
             success.focus();
           }
         } catch (err) {
-          status.innerHTML = `Sorry, something went wrong. Please try again, or <a href="${waLink()}" target="_blank" rel="noopener">message me on WhatsApp</a>.`;
-          status.className = "form-status error";
+          // Form service not available (e.g. the site is hosted on Vercel, not Netlify):
+          // send the same details through WhatsApp instead, so no enquiry is lost.
+          const lines = [`New ${form.getAttribute("name")} from the website:`];
+          $$("input, select, textarea", form).forEach((field) => {
+            if (field.type === "hidden" || field.type === "file" || field.name === "bot-field" || !field.value) return;
+            if (field.type === "radio" && !field.checked) return;
+            const label = field.type === "radio" ? "Rating" : ($(`label[for="${field.id}"]`, form)?.childNodes[0]?.textContent || field.name).trim();
+            lines.push(`${label}: ${field.type === "radio" ? `${field.value}/5` : field.value}`);
+          });
+          window.open(waLink(lines.join("\n")), "_blank", "noopener");
+          status.innerHTML = `WhatsApp has opened with your details. Just tap <strong>Send</strong>. If it didn't open, <a href="${waLink(lines.join("\n"))}" target="_blank" rel="noopener">tap here</a>.`;
+          status.className = "form-status";
         } finally {
           button.disabled = false;
           button.textContent = originalText;
